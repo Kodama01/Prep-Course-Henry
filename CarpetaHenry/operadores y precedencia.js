@@ -3,7 +3,7 @@ var sum = 5 + 3;
 var min = 5 - 3;
 var times = 5 * 3;
 var div = 5 / 3;
-var mod = 100 % 5;
+var mod = 21 % 5;
 
 console.log('Hola'+' '+'Mundo!');
 console.log(sum);
