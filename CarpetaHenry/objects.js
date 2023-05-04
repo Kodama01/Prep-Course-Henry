@@ -33,15 +33,13 @@ console.log(Ropa)
 
 var comidas = {};
 var diferenciaNotacion = function (p1, p2) {
-    comidas.p1 = ['Frutas', 'Vegetales'];
-    comidas[p2] = ['Amvorgesa', 'Pizza'];
+    comidas.p1 = ['Frutas', 'Vegetales']; //<----(.p1 esta mal)     Muchas veces nos puede suceder que necesitemos utilizar una variable externa para guardarla como propiedad en un objeto. 
+    comidas[p2] = ['Amvorgesa', 'Pizza'];//Es importante que en esos casos recordemos utilizar Bracket-Notation sin comillas para que funcione correctamente.
 };
 
 diferenciaNotacion('Wacala', 'Riko');
 console.log(comidas);
 
-//Muchas veces nos puede suceder que necesitemos utilizar una variable externa para guardarla como propiedad en un objeto. 
-//Es importante que en esos casos recordemos utilizar Bracket-Notation sin comillas para que funcione correctamente.
 
 //Metodos
 
