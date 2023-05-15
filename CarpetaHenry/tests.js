@@ -1,22 +1,14 @@
-function iterateAndSave(num) {
-  const resultArr = [];
-  let iterations = 0;
-
-  while (iterations < 10) {
-    num += 2;
-    resultArr.push(num);
-    iterations++;
-    
-    if (num === iterations) {
-      console.log("Execution interrupted");
-      break;
+function generateShape(integer){
+  let square = ''
+  for( let i = 0 ; i < integer ; i++){
+    for(let j = 0 ; j < integer ; j++){
+      square += '+'
     }
+    square += '\n'
   }
-
-  return resultArr;
+  return (square);
 }
 
 // Example usage:
-const num = -2;
-const result = iterateAndSave(num);
+const result = generateShape(20);
 console.log(result);
