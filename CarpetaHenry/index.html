@@ -10,11 +10,14 @@
     <h2>Classes applied to a list in HTML</h2>
     <ul id="myList">
         <!--To be filled by JavaScript-->
-
+        <li>Item #1</li>
+        <li>Item #2</li>
+        <li>Item #3</li>
     </ul>
     <script src="listBinding.js"></script>
     <script>
         let myList = document.getElementById('myList');
+        let listBinding = new ListBinding(myList);
     </script>
 </body>
 </html>
