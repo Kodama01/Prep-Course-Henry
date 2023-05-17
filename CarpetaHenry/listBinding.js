@@ -1,7 +1,9 @@
+//This small program works calling this class and its methods directly from the browser's built in console
+//ALL the content on this was explained in https://www.youtube.com/watch?v=2ZphE5HcQPQ&ab_channel=freeCodeCamp.org
 class ListBinding{
     constructor(listElement){
         this.listElement = listElement;
-        this.textList = [];
+        this.textList = ['n','a','c'];
     }
     /* Makes an <li>text</li> element/tag */
     static createListItem (text){
@@ -20,10 +22,12 @@ class ListBinding{
         }
     }
 
+    /* Adds given text to the <li> , then updates */
     add(text){
         this.textList.push(text);
         this.update();
     }
+    /* Removes the item using its index starting from [0], then updates */
     remove(index){
         this.textList.splice(index, 1);
         this.update();
