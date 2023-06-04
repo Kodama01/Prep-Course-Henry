@@ -122,3 +122,29 @@ function developSoftware(programmers){
     }
 }
 developSoftware(programmers);
+
+//POLYMORPHISM
+
+class Animal{
+    constructor(_name){
+        this.name = _name;
+    }
+    makeSounds(){
+        console.log('Generic Animal Sound')
+    }
+}
+
+class Dog extends Animal{
+    constructor(_name){
+        super(_name)
+    }
+    makeSounds(){
+        super.makeSounds();
+        console.log('Woof woof bitch')
+    }
+}
+
+let a1 = new Animal('Bull')
+let a2 = new Dog('Greyhound')
+a1.makeSounds();
+a2.makeSounds();
