@@ -1,4 +1,16 @@
-#div2{
-    height: 1000px;
-    width: 1500px;
+table {
+    border-collapse: collapse;
+}
+table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* CSS for the image */
+.resized-image {
+    max-width: 50%;
+    max-height: 50%;
+    display: block;
+    margin: 0 auto;
 }
