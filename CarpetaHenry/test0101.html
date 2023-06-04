@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function callback (){
+        //     console.log('Soy una papa frita')
+        // }
+        // function mensaje(fn){
+        //     fn();
+        // }
+
+        function function1(fn){
+            setTimeout(function(){
+                console.log('papas con queso')
+                fn();
+            }, 1000)
+        }
+
+        function function2(){
+            console.log('chili picante')
+        }
+        
+        function1(function2)
+        
+    </script>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+
+</body>
+</html>
