@@ -7,7 +7,6 @@ table td {
     text-align: center;
 }
 
-/* CSS for the image */
 .resized-image {
     max-width: 50%;
     max-height: 50%;
